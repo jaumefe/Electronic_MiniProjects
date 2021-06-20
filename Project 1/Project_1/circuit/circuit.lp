@@ -11,7 +11,7 @@
  (net 241a7594-ef43-4559-96df-4f83f22631a1 (auto true) (name "N3")
   (netclass 2b22b551-d53d-4000-9c59-446cc7c15c2e)
  )
- (net 4e70eede-6358-4d64-b113-d5a16f8aabde (auto true) (name "N6")
+ (net 4b0f759a-2674-4bc9-9de5-f322c972c131 (auto true) (name "N6")
   (netclass 2b22b551-d53d-4000-9c59-446cc7c15c2e)
  )
  (net 7c5a859e-27df-48ab-9fb4-a32c033eb7c0 (auto false) (name "GND")
@@ -24,13 +24,6 @@
   (netclass 2b22b551-d53d-4000-9c59-446cc7c15c2e)
  )
 
- (component 133a4849-7cb5-4a48-817d-49abf80a5a09
-  (lib_component 58c3c6cd-11eb-4557-aa3f-d3e05874afde)
-  (lib_variant afb86b45-68ec-47b6-8d96-153d73567228)
-  (lib_device none)
-  (name "VCC1") (value "VCC")
-  (signal 1d893320-f811-4a79-b64e-cc23d749d394 (net 084a8ae4-a5d5-47dd-a08a-c5820cfe2062))
- )
  (component 13f2fb90-7f42-4308-af9d-d0695ae0a8aa
   (lib_component d167e0e3-6a92-4b76-b013-77b9c230e5f1)
   (lib_variant 8cd7b37f-e5fa-4af5-a8dd-d78830bba3af)
@@ -49,13 +42,6 @@
   (signal 3452d36e-1ce8-4b7c-8e5b-90c2e4929ed8 (net 0c4384a5-bc68-456e-83c5-1b137fc8a4bf))
   (signal ad623f98-9e73-49c3-9404-f7cfa99d17cd (net 084a8ae4-a5d5-47dd-a08a-c5820cfe2062))
  )
- (component 488ddb07-0885-45f0-b8eb-46fa9b806d7c
-  (lib_component 58c3c6cd-11eb-4557-aa3f-d3e05874afde)
-  (lib_variant afb86b45-68ec-47b6-8d96-153d73567228)
-  (lib_device none)
-  (name "VCC2") (value "VCC")
-  (signal 1d893320-f811-4a79-b64e-cc23d749d394 (net 084a8ae4-a5d5-47dd-a08a-c5820cfe2062))
- )
  (component 64f8e223-8d91-4dfc-85d5-50a866b10269
   (lib_component 8076f6be-bfab-4fc1-9772-5d54465dd7e1)
   (lib_variant f09ad258-595b-4ee9-a1fc-910804a203ae)
@@ -71,14 +57,6 @@
   (attribute "RESISTANCE" (type resistance) (unit kiloohm) (value "2.2"))
   (signal 3452d36e-1ce8-4b7c-8e5b-90c2e4929ed8 (net 241a7594-ef43-4559-96df-4f83f22631a1))
   (signal ad623f98-9e73-49c3-9404-f7cfa99d17cd (net 084a8ae4-a5d5-47dd-a08a-c5820cfe2062))
- )
- (component 69b9953b-cf11-4267-bf32-af982474e805
-  (lib_component 2491e537-6ac7-432a-9475-f9e81b3fc081)
-  (lib_variant ceadff63-9095-499d-8e09-27032bab4885)
-  (lib_device f8957acc-4a9e-422b-91a1-3310e976e7dd)
-  (name "MIC1") (value "{{PARTNUMBER or DEVICE or COMPONENT}}")
-  (signal 05dd9803-a165-4248-9198-db63a4c9271d (net none))
-  (signal 43a3c89c-8ffa-4957-af1c-7e55b2f887d8 (net none))
  )
  (component 7a283fe6-84b7-463e-a54f-cb257e92eed7
   (lib_component ef80cd5e-2689-47ee-8888-31d04fc99174)
@@ -111,7 +89,7 @@
   (lib_device 58678317-f386-416d-890a-470f59ab3fba)
   (name "R1") (value "{{RESISTANCE}}")
   (attribute "RESISTANCE" (type resistance) (unit kiloohm) (value "27"))
-  (signal 3452d36e-1ce8-4b7c-8e5b-90c2e4929ed8 (net 4e70eede-6358-4d64-b113-d5a16f8aabde))
+  (signal 3452d36e-1ce8-4b7c-8e5b-90c2e4929ed8 (net 4b0f759a-2674-4bc9-9de5-f322c972c131))
   (signal ad623f98-9e73-49c3-9404-f7cfa99d17cd (net 084a8ae4-a5d5-47dd-a08a-c5820cfe2062))
  )
  (component 9ed905b2-a27d-4acb-a948-3ed6c21da3cd
@@ -123,19 +101,29 @@
   (signal 3452d36e-1ce8-4b7c-8e5b-90c2e4929ed8 (net 7c5a859e-27df-48ab-9fb4-a32c033eb7c0))
   (signal ad623f98-9e73-49c3-9404-f7cfa99d17cd (net 0c4384a5-bc68-456e-83c5-1b137fc8a4bf))
  )
+ (component c365433e-8196-4d93-9ee1-6f2e4002efaf
+  (lib_component 60b7d499-31e2-4528-9aea-11a4df0ae846)
+  (lib_variant 3055454f-9b84-49da-aa41-fe95292360bc)
+  (lib_device 8f2df5d2-8931-4449-9ea2-90b45e81b656)
+  (name "MIC1") (value "{{PARTNUMBER or DEVICE or COMPONENT}}")
+  (signal 12f447e5-cc7a-483a-9bc5-a8eebe578935 (net 7c5a859e-27df-48ab-9fb4-a32c033eb7c0))
+  (signal ec183238-fbf6-4eed-8861-4d3be41a17d4 (net 4b0f759a-2674-4bc9-9de5-f322c972c131))
+ )
+ (component cc1a5be0-cb14-4bad-af3a-5e956e8e0f8a
+  (lib_component ab344e7c-b740-4f2a-b21a-f7b1c433f990)
+  (lib_variant ee92375f-b17d-4d79-84d9-4df2c4aed57a)
+  (lib_device none)
+  (name "J2") (value "{{PARTNUMBER}}")
+  (attribute "VOUT" (type string) (unit none) (value ""))
+  (signal 4b7490ca-af89-4dd9-beff-9edc631e7d9b (net 7c5a859e-27df-48ab-9fb4-a32c033eb7c0))
+  (signal 9e3c2d0e-7bc0-42e9-a562-f21ef061126a (net 084a8ae4-a5d5-47dd-a08a-c5820cfe2062))
+ )
  (component d438c5a0-d8f4-48f0-bd36-ff8939860ad6
   (lib_component 8076f6be-bfab-4fc1-9772-5d54465dd7e1)
   (lib_variant f09ad258-595b-4ee9-a1fc-910804a203ae)
   (lib_device none)
   (name "GND3") (value "GND")
   (signal ff161c97-29a5-43aa-a9ae-3ca7a66982ce (net 7c5a859e-27df-48ab-9fb4-a32c033eb7c0))
- )
- (component d96965f8-21aa-4aaa-9905-b851d14643f1
-  (lib_component 58c3c6cd-11eb-4557-aa3f-d3e05874afde)
-  (lib_variant afb86b45-68ec-47b6-8d96-153d73567228)
-  (lib_device none)
-  (name "VCC3") (value "VCC")
-  (signal 1d893320-f811-4a79-b64e-cc23d749d394 (net 084a8ae4-a5d5-47dd-a08a-c5820cfe2062))
  )
  (component eece6011-a22a-48d5-ac96-178b95dc6ea5
   (lib_component 2e833724-610d-44d8-bd1b-e291e0002736)
@@ -145,6 +133,20 @@
   (signal 7881de12-686e-49c0-be89-a40121a77f7d (net 241a7594-ef43-4559-96df-4f83f22631a1))
   (signal 83170cf1-eb49-485a-b58e-17f7917d9a16 (net fc23c5d1-bca0-45c6-99a8-b39a7375d6fc))
   (signal f560cfa7-f6ac-4d8b-a88f-5a56e33bb563 (net 0c4384a5-bc68-456e-83c5-1b137fc8a4bf))
+ )
+ (component f1f4776d-e40d-472f-88f7-350635c27967
+  (lib_component 58c3c6cd-11eb-4557-aa3f-d3e05874afde)
+  (lib_variant afb86b45-68ec-47b6-8d96-153d73567228)
+  (lib_device none)
+  (name "VCC4") (value "VCC")
+  (signal 1d893320-f811-4a79-b64e-cc23d749d394 (net 084a8ae4-a5d5-47dd-a08a-c5820cfe2062))
+ )
+ (component f44d59ac-cd3f-4c36-a7a2-0bfd936fc75c
+  (lib_component 8076f6be-bfab-4fc1-9772-5d54465dd7e1)
+  (lib_variant f09ad258-595b-4ee9-a1fc-910804a203ae)
+  (lib_device none)
+  (name "GND5") (value "GND")
+  (signal ff161c97-29a5-43aa-a9ae-3ca7a66982ce (net 7c5a859e-27df-48ab-9fb4-a32c033eb7c0))
  )
  (component f59c110b-2f35-4d0c-93d2-998f6ff658ab
   (lib_component d167e0e3-6a92-4b76-b013-77b9c230e5f1)
@@ -168,7 +170,7 @@
   (lib_device 2704f5e1-f8c2-4565-b8bd-5a7ea9946f08)
   (name "C1") (value "{{CAPACITANCE}}")
   (attribute "CAPACITANCE" (type capacitance) (unit microfarad) (value "5"))
-  (signal 1c1c7abc-7b40-4f92-b533-f65604644db7 (net 4e70eede-6358-4d64-b113-d5a16f8aabde))
+  (signal 1c1c7abc-7b40-4f92-b533-f65604644db7 (net 4b0f759a-2674-4bc9-9de5-f322c972c131))
   (signal 6d776f4d-2a7c-4128-a98a-dbb1dd861411 (net 0c4384a5-bc68-456e-83c5-1b137fc8a4bf))
  )
 
