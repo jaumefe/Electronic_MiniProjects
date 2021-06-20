@@ -1,5 +1,8 @@
-# Project 1: Preamplifier for a microphone
-## Specifications
+# Project_1
+
+## Description
+
+This is a [LibrePCB](https://librepcb.org) project!
  * Build a preamplifier and a power stage to feed a loud speaker
  * The input signal is given by a electret microphone. The signal must be processed by a preamplifier stage and a power stage to feed a loudspeaker
  * The specifications to implement the preamplifier for a ECM microphone (capacitor microphone) are:
@@ -12,3 +15,7 @@
  * Resistors, potentiometres and condensateurs
  * Input Voltage: +/- 12V, +5V
  * Electret microphone CI EM100T
+
+## License
+
+See [LICENSE.txt](LICENSE.txt).
